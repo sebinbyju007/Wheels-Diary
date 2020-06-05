@@ -1,0 +1,109 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Wheels Diary</string>
+    <string name="nav_header_subtitle">http://www.wheelsdiary.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">About</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_driver">Driver Data</string>
+    <string name="menu_trip">Trip Data</string>
+    <string name="menu_vehicle">Vehicle Data</string>
+    <string name="menu_login">LOGIN</string>
+    <string name="menu_end">Status</string>
+
+    <string name="app_name">Wheels Diary</string>
+    <string name="app_title">Wheels Diary</string>
+    <string name="welcome">Welcome Back</string>
+    <string name="first_time">For the first time?</string>
+    <string name="reg_button">Register</string>
+    <string name="login">Login</string>
+
+
+    <string name="reg_head">Driver Details</string>
+    <string name="e_name">Full Name</string>
+    <string name="e_dob">Date of Birth</string>
+    <string name="e_phone">Phone Number</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="e_blood">Blood Group</string>
+    <string name="e_exp">Year of Experience</string>
+    <string name="e_license">License Category</string>
+    <string name="two_w">2 Wheeler</string>
+    <string name="three_w">3 Wheeler</string>
+    <string name="four_w">4 Wheeler</string>
+    <string name="heavy">Heavy Goods</string>
+    <string name="nxt_button">NEXT</string>
+
+    <string-array name="blood_case">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="exp_case">
+        <item>1 Year</item>
+        <item>2 Year</item>
+        <item>5 Year</item>
+        <item>10 Year</item>
+        <item>15 Year</item>
+    </string-array>
+
+
+    <string name="trip_head">Trip Details</string>
+    <string name="trip_start">Pickup Point</string>
+    <string name="trip_end">Dropping Point</string>
+    <string name="trip_km">Expected Distance</string>
+    <string name="trip_amount">Total Amount</string>
+    <string name="trip_fuel">Fuel Amount</string>
+    <string name="trip_additional">Additional Cost</string>
+    <string name="driver_wage">Driver wage</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="submit_trip">SUBMIT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="vehicle_head">Vehicle Details</string>
+    <string name="reg_no">Registration Number</string>
+    <string name="chasis_no">Chasis Number</string>
+    <string name="tax">Tax</string>
+
+    <string name="tax_from">From</string>
+    <string name="tax_to">until</string>
+    <string name="insurance">Insurance</string>
+    <string name="insurance_from">From</string>
+
+    <string name="insurance_to">until</string>
+    <string name="tax_amt">Tax Amount</string>
+    <string name="insurance_amt">Insurance Amount</string>
+    <string name="save_1">SAVE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sav">Data Successfully Saved</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_record">Create Record</string>
+    <string name="u_name">User Name</string>
+    <string name="u_company">User Organisation</string>
+    <string name="u_gst">User GST License No</string>
+    <string name="u_type">Company Category</string>
+    <string name="reg_h">Enter Registration Details</string>
+    <string name="reload">Add New Record</string>
+    <string name="communicate">Communicate</string>
+    <string name="Logged_in">Logged in</string>
+    <string name="send">Send</string>
+    <string name="menu_share">Share</string>
+    <string name="app_info">Record your Trip information on your SCREEN</string>
+
+
+</resources>

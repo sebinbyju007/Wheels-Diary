@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/vehicle_head"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:gravity="center"
+        android:text="@string/vehicle_head"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/reg_no"
+        app:layout_constraintBaseline_toBaselineOf="@+id/reg_edit"
+        app:layout_constraintEnd_toStartOf="@+id/reg_edit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/chasis_no"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chasis_edit"
+        app:layout_constraintEnd_toStartOf="@+id/chasis_edit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tax"
+        android:layout_width="66dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/tax"
+        app:layout_constraintEnd_toStartOf="@+id/tax_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/insurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/insurance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tax" />
+
+    <TextView
+        android:id="@+id/t_amt"
+        android:layout_width="103dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tax_amt"
+        app:layout_constraintEnd_toStartOf="@+id/t_a_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insurance" />
+
+    <TextView
+        android:id="@+id/i_amt"
+        android:layout_width="128dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/insurance_amt"
+        app:layout_constraintEnd_toStartOf="@+id/i_a_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_amt" />
+
+    <EditText
+        android:id="@+id/reg_edit"
+        android:layout_width="174dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_head" />
+
+    <EditText
+        android:id="@+id/chasis_edit"
+        android:layout_width="174dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/reg_edit" />
+
+    <EditText
+        android:id="@+id/tax_from"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="104dp"
+        android:ems="10"
+        android:hint="@string/tax_from"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tax"
+        app:layout_constraintStart_toEndOf="@+id/tax" />
+
+    <EditText
+        android:id="@+id/tax_to"
+        android:layout_width="87dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/tax_to"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tax_from"
+        app:layout_constraintStart_toEndOf="@+id/tax_from" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="108dp"
+        android:ems="10"
+        android:hint="@string/insurance_from"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/insurance"
+        app:layout_constraintStart_toEndOf="@+id/insurance" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="91dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="@string/insurance_to"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText5"
+        app:layout_constraintStart_toEndOf="@+id/editText5" />
+
+    <EditText
+        android:id="@+id/t_a_edit"
+        android:layout_width="172dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="68dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/t_amt"
+        app:layout_constraintStart_toEndOf="@+id/t_amt" />
+
+    <EditText
+        android:id="@+id/i_a_edit"
+        android:layout_width="175dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i_amt"
+        app:layout_constraintStart_toEndOf="@+id/i_amt" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/nxt_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i_amt" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/reg_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/reg_head"
+        android:textAppearance="@style/Data_Style"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/e_name"
+        style="@style/Data_Style"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/e_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_head" />
+
+    <EditText
+        android:id="@+id/e_dob"
+        style="@style/Data_Style"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/e_dob"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_name" />
+
+    <EditText
+        android:id="@+id/e_phone"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/e_phone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_dob" />
+
+    <EditText
+        android:id="@+id/e_mail"
+        android:layout_width="381dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_phone" />
+
+    <Spinner
+        android:id="@+id/spinner_blood"
+        android:layout_width="131dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/blood_case"
+        app:layout_constraintStart_toEndOf="@+id/e_blood"
+        app:layout_constraintTop_toBottomOf="@+id/e_mail" />
+
+    <TextView
+        android:id="@+id/e_blood"
+        style="@style/Data_Style"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/e_blood"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_blood"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_mail" />
+
+    <TextView
+        android:id="@+id/e_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/e_exp"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_experience"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_blood" />
+
+    <Spinner
+        android:id="@+id/spinner_experience"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/exp_case"
+        app:layout_constraintStart_toEndOf="@+id/e_experience"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_blood" />
+
+    <TextView
+        android:id="@+id/e_license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/e_license"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toStartOf="@+id/two_w"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_experience" />
+
+    <CheckBox
+        android:id="@+id/four_w"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/four_w"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toTopOf="@+id/heavy_w"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/three_w" />
+
+    <CheckBox
+        android:id="@+id/two_w"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/two_w"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toTopOf="@+id/three_w"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_experience" />
+
+    <CheckBox
+        android:id="@+id/three_w"
+        android:layout_width="125dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/three_w"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toTopOf="@+id/four_w"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/two_w" />
+
+    <CheckBox
+        android:id="@+id/heavy_w"
+        android:layout_width="161dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/heavy"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four_w" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/nxt_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_license"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
